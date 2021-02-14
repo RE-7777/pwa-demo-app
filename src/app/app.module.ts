@@ -6,18 +6,21 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { RouterModule } from '@angular/router';
+
 import { NavbarComponent } from './common/navbar/navbar.component';
+import { ProductModule } from './product/product.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    RouterModule
+    RouterModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
