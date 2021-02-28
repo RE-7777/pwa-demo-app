@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './common/navbar/navbar.component';
 import { ProductModule } from './product/product.module';
 
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { ProductModule } from './product/product.module';
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     RouterModule,
-    ProductModule
+    ProductModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
