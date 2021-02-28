@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pwa-demo-app-c945d": {
+      "hosting": {
+        "pwa-demo-app": [
+          "pwa-demo-app-c945d"
+        ]
+      }
+    }
+  }
+}
